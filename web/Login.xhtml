@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+
+        <f:facet name="first">
+            <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+            <title>Sistema Gereciamento de Compra e Venda de Frangos</title>
+        </f:facet>
+
+        <style type="text/css">
+            #cabecalho{ float: right; width: 53%;}
+            h1{width: 40%; margin: 0; padding-left: 10%;}
+        </style>
+
+    </h:head>
+
+    <h:body>
+
+        <h:form id="formLogin">
+
+            <p:growl id="gro" sticky="true" showDetail="true" life="4000"/>
+
+            <p:layout fullPage="true" >
+
+                <p:layoutUnit position="north" size="70" resizable="true" closable="true" collapsible="true">
+
+                    <div id = "cabecalho">
+
+                        <h:outputText value = "Login : " />
+                        <p:inputText value = "#{user.email}" />
+                        <h:outputText value = " Senha : " />
+                        <p:password value = "#{user.senha}" />
+                        <p:commandButton value = "Entrar" action = "#{ControladorUser.login(user)}" update = ":formLogin:gro"/>
+
+                    </div>
+
+                    <h1>Sistema GCV</h1>
+
+                </p:layoutUnit>
+
+               <p:layoutUnit position="center">
+
+                    <center>
+
+                        <h2>Criar Conta</h2>
+
+                        <h:panelGrid columns = "2">
+
+                             <h:outputText value = "E-mail: "/>
+                            <p:inputText value="#{usuario.email}"/>
+                            <h:outputText value = "Senha: " />
+                            <p:password value = "#{usuario.senha}" feedback = "true" maxlength="10">
+                                <f:validateLength minimum = "4" />
+                            </p:password>
+                            <h:outputText value = "Confirma Senha: " />
+                            <p:password value = "#{usuario.senha}" feedback = "true"  maxlength="10" requiredMessage = ""/>
+                     </h:panelGrid>
+
+                        <p:commandButton value = "Cadastrar-se" action = "#{ControladorUser.login(user)}" update=":formLogin:gro"/>
+                        <p:commandButton value = "Limpar" type="reset" />
+
+                    </center>
+
+                </p:layoutUnit>
+                
+                 <p:layoutUnit position="east" size="610" collapsible="true">
+                    <h:graphicImage library="Imagem" name="galinha.jpg" height="540" width="600"/>
+                </p:layoutUnit>
+
+            </p:layout>
+
+        </h:form>
+
+    </h:body>
+</html>

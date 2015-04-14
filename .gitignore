@@ -1,0 +1,207 @@
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Java.gitignore
+################################################## ####################################
+
+* .class
+
+# ferramentas de móveis para Java (J2ME)
+.mtj.tmp /
+
+# Package Files #
+* .jar
+* .war
+* Medo
+
+# Registros de acidentes máquina virtual, ver http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid *
+
+# web arquivos compilados
+aulas /
+
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Maven.gitignore
+################################################## ####################################
+
+alvo /
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Gradle.gitignore
+################################################## ####################################
+
+.gradle
+construir /
+
+# Ignorar configuração Gradle GUI
+gradle-app.setting
+
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
+################################################## ####################################
+
+* ~
+
+# preferências do diretório do KDE
+.directory
+
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
+################################################## ####################################
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ícone deve terminar com dois \ r
+Ícone
+
+# Miniaturas
+._ *
+
+Arquivos # que podem aparecer no disco externo
+.Spotlight-V100
+.Trashes
+
+# Diretórios potencialmente criado no compartilhamento remoto AFP
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Itens temporários
+.apdisk
+
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
+################################################## ####################################
+
+# windows caches de arquivo de imagem
+Thumbs.db
+ehthumbs.db
+
+# Arquivo de configuração de pastas
+Desktop.ini
+
+# Lixeira utilizada em compartilhamentos de arquivos
+$ RECYCLE.BIN /
+
+# arquivos do Windows Installer
+* .táxi
+* .msi
+* .msm
+* Msp
+
+Atalhos do Windows #
+* .lnk
+
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore
+################################################## ####################################
+
+* .pydevproject
+.metadata
+.gradle
+bin /
+tmp /
+* .tmp
+* .bak
+* .swp
+* ~ .nib
+local.properties
+.settings /
+.loadpath
+.classpath
+.project
+
+# construtores ferramenta externa
+.externalToolBuilders /
+
+# armazenadas localmente "configurações de lançamento de Eclipse"
+* .launch
+
+# CDT-específica
+.cproject
+
+# PDT-específica
+.buildpath
+
+# Sbteclipse plug-in
+.alvo
+
+# TeXlipse plug-in
+.texlipse
+
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Global/NetBeans.gitignore
+################################################## ####################################
+
+nbproject / private /
+construir /
+nbbuild /
+dist /
+nbdist /
+nbactions.xml
+nb-configuration.xml
+
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Global/Vagrant.gitignore
+################################################## ####################################
+
+.vagrant /
+
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Global/vim.gitignore
+################################################## ####################################
+
+[._] *. S [aw] [az]
+[._] S [aw] [az]
+* .UN ~
+Session.vim
+.netrwhist
+* ~
+
+################################################## ####################################
+# Https://github.com/github/gitignore/blob/master/Global/SublimeText.gitignore
+################################################## ####################################
+
+# Arquivos de cache para o texto sublime
+* .tmlanguage.cache
+* .tmPreferences.cache
+* .stTheme.cache
+
+# Arquivos da área de trabalho são específicas de usuário
+* .sublime-Workspace
+
+# Arquivos de projeto deve ser verificado para o repositório, a menos que uma significativa
+# Proporção de contribuintes provavelmente não vai usar SublimeText
+# * .sublime-Project
+
+# Arquivo de configuração sftp
+sftp-config.json
+
+################################################## ####################################
+# arquivos de banco de dados H2
+################################################## ####################################
+
+* .h2.db
+* .trace.db
+* .lock.db
+
+################################################## ####################################
+# Arquivos de log
+################################################## ####################################
+
+* .log
+
+################################################## ####################################
+# arquivos variados
+################################################## ####################################
+
+* .zip
+* .ipr
+* .iws
+* .iml
+* .swp
+cobertura.ser
